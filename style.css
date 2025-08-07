@@ -1,0 +1,61 @@
+:root {
+  --bg: #0f0f0f;
+  --text: #f2f2f2;
+  --primary: #6c63ff;
+  --accent: #00e0ff;
+}
+
+body.light {
+  --bg: #ffffff;
+  --text: #111111;
+  --primary: #4f46e5;
+  --accent: #00bcd4;
+}
+
+body {
+  margin: 0; font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex; justify-content: space-between;
+  align-items: center; padding: 1em 2em;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.logo { font-size: 1.5em; font-weight: bold; color: var(--accent); }
+.lang-switch button, .theme-switch button {
+  background: none; border: none; color: var(--text);
+  font-size: 1em; margin: 0 0.3em; cursor: pointer;
+}
+
+.hero {
+  text-align: center; padding: 3em 1em;
+}
+
+.hero h1 { font-size: 2.5em; margin-bottom: 0.5em; }
+.hero p { font-size: 1.2em; color: var(--accent); }
+.cta {
+  display: inline-block; margin-top: 1em;
+  background-color: var(--primary); color: white;
+  padding: 0.75em 1.5em; border-radius: 8px; text-decoration: none;
+  transition: background 0.3s;
+}
+.cta:hover { background-color: var(--accent); }
+
+.api-form {
+  padding: 2em; text-align: center;
+}
+.api-form input {
+  display: block; width: 80%; max-width: 300px;
+  margin: 1em auto; padding: 0.7em;
+  border-radius: 5px; border: 1px solid var(--accent);
+}
+.api-form button {
+  padding: 0.7em 2em; background-color: var(--accent);
+  border: none; border-radius: 6px; cursor: pointer; font-weight: bold;
+}
+
+footer { text-align: center; padding: 1em; font-size: 0.9em; color: gray; }
